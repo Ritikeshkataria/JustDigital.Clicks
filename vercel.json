@@ -14,6 +14,10 @@
       "dest": "/favicon.svg"
     },
     {
+      "src": "/manus-routes.json",
+      "dest": "/manus-routes.json"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
