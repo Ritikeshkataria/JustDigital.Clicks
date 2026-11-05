@@ -1,25 +1,21 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/api/:path*",
+      "destination": "https://justdigital-cunxazqm.manus.space/api/:path*"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
+      "source": "/portal",
+      "destination": "https://justdigital-cunxazqm.manus.space/portal"
     },
     {
-      "src": "/favicon.svg",
-      "dest": "/favicon.svg"
+      "source": "/portal/:path*",
+      "destination": "https://justdigital-cunxazqm.manus.space/portal/:path*"
     },
     {
-      "src": "/manus-routes.json",
-      "dest": "/manus-routes.json"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
